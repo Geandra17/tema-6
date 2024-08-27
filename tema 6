@@ -1,0 +1,27 @@
+function executarOperacoes() {
+    
+    let listaDeCompras = ["pão", "leite", "ovos", "queijo", "frutas"];
+    console.log( listaDeCompras);
+
+    
+    listaDeCompras.push("café"); // Adiciona "café" ao final da lista
+    listaDeCompras.unshift("manteiga"); // Adiciona "manteiga" ao início da lista
+    console.log( listaDeCompras);
+
+   
+    const itemRemovido = listaDeCompras.pop(); // Remove o último item
+    const primeiroItemRemovido = listaDeCompras.shift(); // Remove o primeiro item
+   
+    console.log( itemRemovido);
+    console.log( primeiroItemRemovido);
+    console.log( listaDeCompras);
+
+  
+    listaDeCompras.splice(1, 1, "chocolate"); // Substitui o segundo item por "chocolate"
+    listaDeCompras.splice(2, 1, "biscoitos", "suco"); // Remove o terceiro item e adiciona "biscoitos" e "suco"
+    console.log( listaDeCompras);
+}
+
+
+executarOperacoes();
+
